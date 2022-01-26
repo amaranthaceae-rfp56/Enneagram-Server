@@ -11,6 +11,9 @@ export class QuestionsService {
   ) {}
 
   async getQuestion(questionID: number) {
+    return await this.questionRepository.findOne(questionID);
+  }
+  async getQuestionWithEnneatype(questionID: number) {
     return await this.questionRepository.findOne(questionID, {
       relations: ['enneatype'],
     });

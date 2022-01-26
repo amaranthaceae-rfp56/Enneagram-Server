@@ -9,4 +9,8 @@ export class EnneatypeController {
   async getEnneatype(@Param('id') id: number) {
     return await this.enneatypeService.getEnneatype(id);
   }
+  @Get('/questions/:id')
+  async getEnneatypeQuestions(@Param('id') id: number) {
+    return await this.enneatypeService.getEnneatypeQuestions(id);
+  }
 }

@@ -12,6 +12,10 @@ export class Question extends BaseEntity{
   @PrimaryGeneratedColumn()
   question_id: number;
 
+  @Column({
+    type: 'smallint',
+  })
+  enneatypeId: number;
 
   @Column({
     type: 'text',
