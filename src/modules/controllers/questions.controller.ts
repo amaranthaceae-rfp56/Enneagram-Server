@@ -8,4 +8,8 @@ export class QuestionsController {
   async getQuestion(@Param('id') questionID: number) {
     return await this.questionsService.getQuestion(questionID);
   }
+  @Get(':id/enneatype')
+  async getQuestionWithEnneatype(@Param('id') questionID: number) {
+    return await this.questionsService.getQuestionWithEnneatype(questionID);
+  }
 }
