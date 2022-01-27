@@ -28,4 +28,18 @@ export class TestService {
   async getTestByTestId(testId: number) {
     return await this.testRepository.findOne(testId);
   }
+
+  async answerTestQuestion(testId: number, enneatype: number) {
+    const test = await this.getTestByTestId(testId);
+    test[enneatype] += 1;
+    test.current_question += 1;
+    return await test.save();
+  }
+
+  async goBackATestQuestion(testId: number, enneatype: number) {
+    const test = await this.getTestByTestId(testId);
+    test[enneatype] -= 1;
+    test.current_question -= 1;
+    return await test.save();
+  }
 }
