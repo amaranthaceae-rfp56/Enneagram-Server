@@ -12,11 +12,19 @@
 ## ABOUT
 RESTful back end for an enneagram test web application. Manages users, tests, and questions. 
 ## API END POINTS
+## USERS
+![userCreate](https://user-images.githubusercontent.com/52953412/151485611-d9ce1167-3c92-48f3-a999-3a0b704778d1.png)
+![getUser](https://user-images.githubusercontent.com/52953412/151485637-433d1c3f-0be0-4b15-9313-2c29277bf5ce.png)
+![getByEmail](https://user-images.githubusercontent.com/52953412/151485645-d0f52d4e-90b8-437e-946e-09adf5faf94b.png)
+![getUserTests](https://user-images.githubusercontent.com/52953412/151485654-9f477c63-300d-4964-a665-cf9f10e8670d.png)
+![userLastTest](https://user-images.githubusercontent.com/52953412/151485657-439e91b6-bdf0-4351-9cc2-c585e5f083d7.png)
+
 ## TESTS
 
 ![createTestByUId](https://user-images.githubusercontent.com/52953412/151456939-3dc0efd6-be95-4cdb-afe6-3635036eb54c.png)
 ![testBytest](https://user-images.githubusercontent.com/52953412/151457108-d53f421d-348e-46bc-b949-4435dae603d6.png)
-![answerTestQuestion](https://user-images.githubusercontent.com/52953412/151457131-b5584705-d3a4-4136-be0a-dbc812ece9dc.png)
+![answerYes](https://user-images.githubusercontent.com/52953412/151485563-0769fa13-a73e-4e82-889e-a651f4419eab.png)
+![answerNo](https://user-images.githubusercontent.com/52953412/151485569-278f3a39-975d-40d6-afdd-7dfb28e47721.png)
 ![backtestQuestion](https://user-images.githubusercontent.com/52953412/151457142-1e0b7199-6521-4a42-81b5-104742dd1f43.png)
 
 ## QUESTIONS
