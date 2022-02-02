@@ -11,6 +11,7 @@ export class EnneatypeController {
   }
   @Get('/questions/:id')
   async getEnneatypeQuestions(@Param('id') id: number) {
+    console.log('this works');
     return await this.enneatypeService.getEnneatypeQuestions(id);
   }
 }
