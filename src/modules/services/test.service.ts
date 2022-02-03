@@ -42,6 +42,7 @@ export class TestService {
   }
 
   async goBackATestQuestion(testId: number, enneatype: number) {
+    //might not work as intended
     const test = await this.getTestByTestId(testId);
     test[enneatype] -= 1;
     test.current_question -= 1;

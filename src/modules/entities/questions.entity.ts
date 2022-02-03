@@ -8,7 +8,7 @@ import {
 import { Enneatype } from './enneatype.entity';
 
 @Entity('questions')
-export class Question extends BaseEntity{
+export class Question extends BaseEntity {
   @PrimaryGeneratedColumn()
   question_id: number;
 

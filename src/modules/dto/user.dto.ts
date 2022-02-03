@@ -9,7 +9,7 @@ export class CreateUserDto {
   @Length(3, 50)
   last_name: string;
 
-  @IsNotEmpty({ message: 'Require users first name' })
+  @IsNotEmpty({ message: 'Require users email' })
   @Length(10, 100)
   email: string;
 }

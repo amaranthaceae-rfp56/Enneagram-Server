@@ -19,7 +19,6 @@ import { TestModule } from './modules/test.module';
       ssl: { rejectUnauthorized: false },
       synchronize: false,
       logging: true,
-      // rejectUnauthorized: false,
     }),
   ],
   controllers: [AppController],
