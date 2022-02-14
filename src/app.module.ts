@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { TestModule } from './modules/test.module';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { TestModule } from './modules/test.module';
       username: process.env.DATABASE_USERNAME,
       password: process.env.DATABASE_PASSWORD,
       database: process.env.DATABASE,
-      entities: [__dirname + '/../**/*.entity{.ts,.js}'],
+      entities: [join(__dirname, '**', '*.entity.{ts,js}')],
       ssl: { rejectUnauthorized: false },
       synchronize: false,
       logging: true,
