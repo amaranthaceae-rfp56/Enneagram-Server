@@ -29,4 +29,9 @@ export class UserService {
     user.testId = testId;
     return await user.save();
   }
+  async changeTestingStatus(userId: number) {
+    const user = await this.getUserById(userId);
+    user.testing = !user.testing;
+    return await user.save();
+  }
 }

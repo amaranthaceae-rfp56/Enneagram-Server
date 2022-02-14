@@ -4,6 +4,7 @@ import {
   Get,
   Param,
   Post,
+  Put,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -17,6 +18,10 @@ export class UserController {
     private userService: UserService,
     private testService: TestService,
   ) {}
+  @Put('/:id/status')
+  async changeTestingStatus(@Param('id') userId: number) {
+    return await this.userService.changeTestingStatus(userId);
+  }
 
   @Post('/create')
   @UsePipes(ValidationPipe)

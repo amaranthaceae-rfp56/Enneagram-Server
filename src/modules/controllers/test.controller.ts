@@ -23,7 +23,9 @@ export class TestController {
   @UsePipes(ValidationPipe)
   async createTest(@Body() test: CreateTestDto) {
     const { userId, id } = await this.testService.createTest(test);
-    return await this.userService.updateUsersTest(userId, id);
+    const newTest = await this.userService.updateUsersTest(userId, id);
+    await this.userService.changeTestingStatus(userId);
+    return newTest;
   }
 
   @Get(':id')
